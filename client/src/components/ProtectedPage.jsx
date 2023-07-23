@@ -8,7 +8,7 @@ import { GetCurrentUser } from "../ApiCall/users";
 const ProtectedPage = ({ children }) => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
-
+  console.log(localStorage.getItem("token"))
   const validateToken = async () => {
     try {
       dispatch(SetLoader(true));

@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 const SimilarProducts = ({gender,category,subcategory}) => {
     const [products, setproducts] = useState([]);
     const toast = useToast();
-    const dispatch=useDispatch();
+    // const dispatch=useDispatch();
 
     const fetchPorducts=async()=>{
         try {
@@ -35,16 +35,25 @@ const SimilarProducts = ({gender,category,subcategory}) => {
 
     const handleRemovewishlist = async (prodId) => {
       try {
-        dispatch(SetLoader(true));
         const response = await AddProductToWishlist(prodId);
         if (response) {
-          dispatch(SetLoader(false));
+          toast({
+            title: "Product added to Wishlist",
+            status: "success",
+            duration: 4000,
+            isClosable: true,
+          });
         } else {
-          throw new Error("Product not fiilters");
+          throw new Error("Product added to Wishlist");
         }
       } catch (error) {
-        dispatch(SetLoader(false));
-        console.log(error.message);
+        toast({
+          title: "Product added to Wishlist",
+          description:error.message,
+          status: "success",
+          duration: 4000,
+          isClosable: true,
+        });
       }
     };
 
@@ -59,13 +68,13 @@ const SimilarProducts = ({gender,category,subcategory}) => {
     <Box w={['80%','80%','80%','60%']} margin={'auto'} mt={20}> 
         <SimpleGrid columns={[2, null, 3,4]} spacing={1}>
           {products.map((item,index)=>(
+            <Box>
             <Link to={`/product/${item._id}`} key={index}>
-
             <Box w={['100%','100%','100%','80%']} h={'250px'}>
                 <Image src={item?.images[0]} w={'full'} h={'full'}>
                 </Image>
             </Box>
-
+            </Link>
             <Flex p={2} w={['100%','100%','100%','80%']} alignItems={'center'} justifyContent={'space-between'}>
                 <Box>
                     <Text> &pound;{item.price}</Text>
@@ -75,7 +84,7 @@ const SimilarProducts = ({gender,category,subcategory}) => {
                   <BsHeart cursor={'pointer'} size={30} onClick={()=>handleRemovewishlist({ prodId: item._id})}/>
                 </Box>
             </Flex>
-       </Link>
+            </Box>
           ))}
         </SimpleGrid>
     </Box>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import ProductImagesCarousel from './ProductImagesCarousel'
-import { Box, Button, Flex, Progress, Text } from '@chakra-ui/react'
+import { Box, Button, Flex, Progress, Text, useToast } from '@chakra-ui/react'
 import {AiFillHeart, AiFillStar, AiOutlineStar} from 'react-icons/ai'
 import { SetLoader } from '../../Redux/LoaderSlice'
 import { GetProductById } from '../../ApiCall/products'
@@ -16,6 +16,7 @@ import { AddProductToWishlist } from '../../ApiCall/wishlistApi';
 
 
 const SingleProduct = () => {
+  const toast = useToast()
   const { id } = useParams();
   const dispatch = useDispatch();
   const [show, setshow] = useState(false);
@@ -70,16 +71,26 @@ const SingleProduct = () => {
 
   const handleRemovewishlist = async (prodId) => {
     try {
-      dispatch(SetLoader(true));
       const response = await AddProductToWishlist(prodId);
       if (response) {
-        dispatch(SetLoader(false));
+        toast({
+          title: 'product added to wishist',
+          description: response.message,
+          status: 'success',
+          duration: 9000,
+          isClosable: true,
+        })
       } else {
         throw new Error("error occurred wishlistGrid handleRemovewishlist");
       }
     } catch (error) {
-      dispatch(SetLoader(false));
-      console.log(error.message);
+      toast({
+        title: 'product',
+        description:error.message,
+        status: 'error',
+        duration: 9000,
+        isClosable: true,
+      })
     }
   };
   

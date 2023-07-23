@@ -57,12 +57,17 @@ export const WishListGrid = () => {
       const response = await AddProductTocart({ productId: id });
       if (response) {
         handlegetAllcart();
+        toast({
+          title: 'product added to bag',
+          status: 'success',
+          duration: 2000,
+          isClosable: true,
+        })
       } else {
         throw new Error("sonmething went wrong in cart");
       }
     } catch (error) {
       console.log(error.message);
-
     }
   };
 
@@ -71,13 +76,18 @@ export const WishListGrid = () => {
     try {
       const response = await AddProductToWishlist(prodId);
       if (response) {
-        fetchPorducts()
+        fetchPorducts();
+        toast({
+          title: 'product removed from wishist',
+          status: 'success',
+          duration: 3000,
+          isClosable: true,
+        })
       } else {
         throw new Error("error occurred wishlistGrid handleRemovewishlist");
       }
     } catch (error) {
       console.log(error.message);
-
     }
   };
 
@@ -147,11 +157,7 @@ useEffect(() => {
               borderRadius="0px"
             >
               <option value="">Size</option>
-              <option value="UK 4">UK 4</option>
-              <option value="UK 5">UK 5</option>
-              <option value="UK 6">UK 6</option>
-              <option value="UK 8">UK 8</option>
-              <option value="UK 9">UK 9</option>
+              <option value={item.size}>{item.size}</option>
             </Select>
           </Flex>
 
