@@ -1,0 +1,45 @@
+{
+    "subCategory":[
+        {
+            "name": "Hats",
+            "value": "Hats"
+        },
+        {
+            "name": "Hair Accessories",
+            "value": "Hair Accessories"
+        },
+        {
+            "name": "Belts",
+            "value": "Belts"
+        },
+        {
+            "name": "Scrarves",
+            "value": "Scrarves"
+        },
+        {
+            "name": "Gloves",
+            "value": "Gloves"
+        },
+        {
+            "name": "Hairbands",
+            "value": "Hairbands"
+        },
+        {
+            "name": "Headscarves",
+            "value": "Headscarves"
+        },
+        {
+            "name": "Glasses",
+            "value": "Glasses"
+        },
+        {
+            "name": "Sunflasses",
+            "value": "Sunflasses"
+        },
+        {
+            "name": "Wedding Accessories",
+            "value": "Wedding Accessories"
+        }
+
+    ]
+}

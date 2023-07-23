@@ -1,0 +1,32 @@
+{
+    "info":[
+        {
+            "name":"SHIRTS",
+            "url":"https://images.asos-media.com/products/asos-design-relaxed-deep-revere-shirt-in-black-paisley-print/202868510-4?$n_640w$&wid=513&fit=constrain"
+        },
+        {
+            "name":"SHORTS",
+            "url":"https://images.asos-media.com/products/another-influence-oversized-chino-shorts-in-khaki/204203391-1-khaki?$n_640w$"
+        }
+        ,
+        {
+            "name":"SMART STUFF",
+            "url":"https://images.asos-media.com/groups/gianni-feraud-single-breasted-suit-in-turquoise-blue/96484-group-1?$n_640w$&wid=513&fit=constrain"
+        }
+        ,
+        {
+            "name":"TEES",
+            "url":"https://images.asos-media.com/products/adidas-originals-adventure-large-chest-graphic-t-shirt-in-green/203404465-3?$n_640w$&wid=513&fit=constrain"
+        }
+        ,
+        {
+            "name":"SNEAKES",
+            "url":"https://images.asos-media.com/products/hi-tech-shadow-og-trainers-in-navy/202167597-1-navy?$n_640w$&wid=513&fit=constrain"
+        }
+        ,
+        {
+            "name":"BEST DEALS",
+            "url":"https://images.asos-media.com/products/asos-design-90s-retro-rimless-sunglasses-in-with-green-gradient-lens-in-gold/204232165-1-gold?$n_640w$&wid=513&fit=constrain"
+        }
+    ]
+}

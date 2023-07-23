@@ -1,0 +1,36 @@
+{
+    "subCategory":[
+        {
+            "name": "Sunglasses",
+            "value": "Sunglasses"
+        },
+        {
+            "name": "Caps & Hats",
+            "value": "Caps & Hats"
+        },
+        {
+            "name": "Belts",
+            "value": "Belts"
+        },
+        {
+            "name": "Ties",
+            "value": "Ties"
+        },
+        {
+            "name": "Watches",
+            "value": "Watches"
+        },
+        {
+            "name": "Gifts",
+            "value": "Gifts"
+        },
+        {
+            "name": "Scarves",
+            "value": "Scarves"
+        },
+        {
+            "name": "Socks",
+            "value": "Socks"
+        }
+    ]
+}

@@ -1,0 +1,40 @@
+{
+    "subCategory":[
+        {
+            "name": "Clothing",
+            "value": "Clothing"
+        },
+        {
+            "name": "Shirt",
+            "value": "Shirt"
+        },
+        {
+            "name": "Shorts",
+            "value": "Shorts"
+        },
+        {
+            "name": "Trousers&Chines",
+            "value": "Trousers&Chines"
+        },
+        {
+            "name": "Cargotrousers",
+            "value": "Cargotrousers"
+        },
+        {
+            "name": "Jeans",
+            "value": "Jeans"
+        },
+        {
+            "name": "Smart Trousers",
+            "value": "Smart Trousers"
+        },
+        {
+            "name": "Blazers",
+            "value": "Blazers"
+        },
+        {
+            "name": "Denim Jackets",
+            "value": "Denim Jackets"
+        }
+    ]
+}

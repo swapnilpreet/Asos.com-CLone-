@@ -1,0 +1,25 @@
+{
+    "subCategory":[
+        {
+            "name": "Trainers",
+            "value": "Trainers"
+        },
+        {
+            "name": "Boots",
+            "value": "Boots"
+        },
+        {
+            "name": "Loafers",
+            "value": "Loafers"
+        },
+        {
+            "name": "Sandals",
+            "value": "Sandals"
+        },
+        {
+            "name": "Socks",
+            "value": "Socks"
+        }
+
+    ]
+}

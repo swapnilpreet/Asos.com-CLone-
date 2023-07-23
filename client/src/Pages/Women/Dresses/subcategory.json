@@ -1,0 +1,28 @@
+{
+    "subCategory":[
+        {
+            "name": "clothing",
+            "value": "clothing"
+        },
+        {
+            "name": "Wedding",
+            "value": "Wedding"
+        },
+        {
+            "name": "Mini",
+            "value": "Mini"
+        },
+        {
+            "name": "Midi",
+            "value": "Midi"
+        },
+        {
+            "name": "Bridesmaid",
+            "value": "Bridesmaid"
+        },
+        {
+            "name": "Wedding Dresses",
+            "value": "Wedding Dresses"
+        }
+    ]
+}

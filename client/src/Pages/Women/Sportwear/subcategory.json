@@ -1,0 +1,24 @@
+{
+    "subCategory":[
+        {
+            "name": "Leggings",
+            "value": "Leggings"
+        },
+        {
+            "name": "Tops",
+            "value": "Tops"
+        },
+        {
+            "name": "Shoe",
+            "value": "Shoe"
+        },
+        {
+            "name": "Sports Bras",
+            "value": "Sports Bras"
+        },
+        {
+            "name": "Shorts",
+            "value": "Shorts"
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "subCategory":[
+        {
+            "name": "Trainers & Sneakers",
+            "value": "Trainers & Sneakers"
+        },
+        {
+            "name": "Heels & High Heels",
+            "value": "Heels & High Heels"
+        },
+        {
+            "name": "Sandals",
+            "value": "Sandals"
+        },
+        {
+            "name": "Boots",
+            "value": "Boots"
+        },
+        {
+            "name": "Flat Shoes",
+            "value": "Flat Shoes"
+        },
+        {
+            "name": "Cowboy",
+            "value": "Cowboy"
+        }
+    ]
+}

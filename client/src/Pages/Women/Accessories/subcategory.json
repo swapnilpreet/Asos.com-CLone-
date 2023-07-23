@@ -1,0 +1,32 @@
+{
+    "subCategory":[
+        {
+            "name": "Hats",
+            "value": "Hat"
+        },
+        {
+            "name": "Wedding",
+            "value": "Wedding"
+        },
+        {
+            "name": "Sunglasses",
+            "value": "Sunglasses"
+        },
+        {
+            "name": "Glasses",
+            "value": "Glasses"
+        },
+        {
+            "name": "Scarves",
+            "value": "Scarves"
+        },
+        {
+            "name": "Belts",
+            "value": "Belts"
+        },
+        {
+            "name": "Hair Accessories",
+            "value": "Hair Accessories"
+        }
+    ]
+}

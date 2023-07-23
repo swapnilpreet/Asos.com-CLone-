@@ -1,0 +1,22 @@
+.ordersumbox{
+    width: 100%;
+    top: 0;
+    margin: auto;
+    position: sticky;
+}
+.ordersum_mainbox{
+    background-color: rgb(255, 255, 255);
+   width: 100%;
+   border-radius: 5px;
+   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+
+/* @media screen and (max-width:900px) {
+    .ordersumbox{
+        width: 100%;
+    }
+    .ordersum_mainbox{
+        width: 500px;
+    }
+} */

@@ -1,0 +1,24 @@
+{
+    "subCategory":[
+        {
+            "name": "Clothing",
+            "value": "clothing" 
+        },
+        {
+            "name": "Sportswear",
+            "value": "Sportswear"
+        },
+        {
+            "name": "Face+Body",
+            "value": "FaceBody"
+        },
+        {
+            "name": "Shoes",
+            "value": "shoes"
+        },
+        {
+            "name": "Accessories",
+            "value": "Accessories"
+        }
+    ]
+}

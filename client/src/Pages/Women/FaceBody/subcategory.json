@@ -1,0 +1,32 @@
+{
+    "subCategory":[
+        {
+            "name": "Makeup",
+            "value": "Makeup"
+        },
+        {
+            "name": "Skin Care",
+            "value": "Skin Care"
+        },
+        {
+            "name": "Hair Care",
+            "value": "Hair Care"
+        },
+        {
+            "name": "Facebody gifts",
+            "value": "Facebody gifts"
+        },
+        {
+            "name": "Tools & Accessories",
+            "value": "Tools Accessories"
+        },
+        {
+            "name": "Nails",
+            "value": "Nails"
+        },
+        {
+            "name": "Fragrances",
+            "value": "Fragrances"
+        }
+    ]
+}

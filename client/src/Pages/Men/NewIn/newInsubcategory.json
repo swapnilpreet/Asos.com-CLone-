@@ -1,0 +1,44 @@
+{
+    "subCategory":[
+        {
+            "name": "Dresses",
+            "value": "Dresses"
+        },
+        {
+            "name": "Sportswear",
+            "value": "Sportswear"
+        },
+        {
+            "name": "Face+Body",
+            "value": "FaceBody"
+        },
+        {
+            "name": "Shorts",
+            "value": "Shorts"
+        },
+        {
+            "name": "Shoes",
+            "value": "shoes"
+        },
+        {
+            "name": "Accessories",
+            "value": "Accessories"
+        },
+        {
+            "name": "Trousers",
+            "value": "Trousers"
+        },
+        {
+            "name": "Jeans",
+            "value": "Jeans"
+        },
+        {
+            "name": "Activewear",
+            "value": "Activewear"
+        },
+        {
+            "name": "Jackets",
+            "value": "Jackets"
+        }
+    ]
+}
