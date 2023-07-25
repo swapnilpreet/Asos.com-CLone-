@@ -43,10 +43,11 @@ const Login = () => {
         toast({
           title: response.message,
           status: 'success',
-          duration: 4000,
+          duration: 2000,
           isClosable: true,
         })
-        navigate("/");
+        // navigate("/");
+        window.location.href='/';
       }
       else {
         throw new Error(response.message);
@@ -61,13 +62,6 @@ const Login = () => {
       })
     }
   };
-
-
-  // useEffect(()=>{
-  //   if(localStorage.getItem('token')){
-  //     navigate("/")
-  //   }
-  // },[]);
 
     return (
         <Box style={{ fontFamily: "sans-serif" }}>

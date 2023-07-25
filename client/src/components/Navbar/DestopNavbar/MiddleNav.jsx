@@ -11,7 +11,7 @@ import {
   PopoverTrigger,
   Text,
 } from "@chakra-ui/react";
-import React from "react";
+import React, { useEffect } from "react";
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
 import { Link, useNavigate } from "react-router-dom";
 import { RepeatClockIcon } from "@chakra-ui/icons";
@@ -25,8 +25,8 @@ import WomensubMenu from "./WomensubMenu";
 import MenSubNav from "./MenSubNav";
 import { BottomBanner } from "./BottomBanner";
 import { useDispatch, useSelector } from "react-redux";
-import { SetUser } from "../../../Redux/UserSlice";
-import MensubCatMenu from "./MensubCatMenu";
+import { LogoutUser, SetUser } from "../../../Redux/UserSlice";
+// import MensubCatMenu from "./MensubCatMenu";
 
 export const MiddleNav = () => {
   const Navigate = useNavigate();
@@ -34,10 +34,10 @@ export const MiddleNav = () => {
 
   const { user } = useSelector((state) => state.users);
   const { cart } = useSelector((state) => state.carts);
-
+   
   const handelSignout = () => {
     localStorage.removeItem("token");
-    dispatch(SetUser(null));
+    dispatch(LogoutUser());
     Navigate("/login");
   };
 
@@ -84,7 +84,6 @@ export const MiddleNav = () => {
             <SearchInput />
             <Box ml={5}>
               <Flex alignItems={"center"}>
-                {/* {user logo with deatils} */}
 
                 <Popover>
                   <PopoverTrigger>

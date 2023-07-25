@@ -49,7 +49,7 @@ const Cartitemsdetails = ({ data }) => {
           <Divider orientation="horizontal"></Divider>
          </Box>
 
-         <Box h={'100vh'} overflow={'scroll'}>
+         <Box maxH={'100vh'} overflow={'scroll'}>
           {data?.map((el) => <Cartsingleitem el={el}/>)}
          </Box>
     </Box>

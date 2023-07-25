@@ -8,7 +8,6 @@ import { GetCurrentUser } from "../ApiCall/users";
 const ProtectedPage = ({ children }) => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  console.log(localStorage.getItem("token"))
   const validateToken = async () => {
     try {
       dispatch(SetLoader(true));
@@ -26,7 +25,7 @@ const ProtectedPage = ({ children }) => {
   };
 
   useEffect(() => {
-    if (localStorage.getItem("token")) {
+    if (localStorage.getItem("token")){
       validateToken();
     } else {
       navigate("/login");

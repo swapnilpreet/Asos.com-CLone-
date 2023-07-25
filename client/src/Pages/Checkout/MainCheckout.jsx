@@ -180,8 +180,8 @@ const MainCheckout = () => {
   }
 
   useEffect(() => {
-    if (updated === "SAVINGS") {
-      let discountAmount = (totalsum * 10) / 100;
+    if (updated === "SHOPNOW") {
+      let discountAmount = (totalsum * 20) / 100;
       let payableAmount = totalsum - discountAmount;
       setshowpromo(true);
       localStorage.setItem("payableAmount", payableAmount);
@@ -501,7 +501,7 @@ const MainCheckout = () => {
                   <Text>Promo</Text>
                 </Box>
                 <Box>
-                  <Text>-10%</Text>
+                  <Text>-20%</Text>
                 </Box>
               </Flex>
             </Collapse>

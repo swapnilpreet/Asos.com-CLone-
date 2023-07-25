@@ -8,8 +8,11 @@ export const usersSlice = createSlice({
     reducers:{
         SetUser:(state,action)=>{
             state.user = action.payload;
+        },
+        LogoutUser:(state,action)=>{
+            state.user =null;
         }
     }
 })
 
-export const {SetUser} = usersSlice.actions;
+export const {SetUser,LogoutUser} = usersSlice.actions;

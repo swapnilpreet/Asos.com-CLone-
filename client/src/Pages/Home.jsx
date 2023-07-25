@@ -7,13 +7,40 @@ import inhouse from "../Images/inhouse.png";
 import getgift from "../Brands/getgift.png";
 import "../style/LandingPage.css";
 import styles from '../components/Navbar/DestopNavbar/style.module.css';
-import { Link } from "react-router-dom";
+import { Link} from "react-router-dom";
 import { Box, Flex, Grid, GridItem, Image, Text } from "@chakra-ui/react";
 import TrendingBrands from "../components/PagesComponents/TrendingBrands";
+// import { useDispatch } from "react-redux";
+// import { SetLoader } from "../Redux/LoaderSlice";
+// import { GetCurrentUser } from "../ApiCall/users";
+// import { SetUser } from "../Redux/UserSlice";
 
 
 
 const Home = () => {
+  
+  // const navigate = useNavigate();
+  // const dispatch = useDispatch();
+
+  // const getUserInfo = async () => {
+  //   try {
+  //     dispatch(SetLoader(true));
+  //     const response = await GetCurrentUser();
+  //     if (response.success) {
+  //       dispatch(SetLoader(false));
+  //       dispatch(SetUser(response.data));
+  //     } else {
+  //       navigate("/login");
+  //     }
+  //   } catch (error) {
+  //     dispatch(SetLoader(false));
+  //     navigate("/login");
+  //   }
+  // }
+  //   useEffect(() => {
+  //     getUserInfo()
+  //   }, [])
+    
 
   return (
 

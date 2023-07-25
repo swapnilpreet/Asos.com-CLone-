@@ -33,7 +33,8 @@ import { HiOutlineHeart, HiOutlineUser } from "react-icons/hi";
 import { FiShoppingBag } from "react-icons/fi";
 import { GrContact } from "react-icons/gr";
 import { IoBagOutline } from "react-icons/io5";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { LogoutUser } from "../../../Redux/UserSlice";
 
 export const TabNavbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -42,9 +43,10 @@ export const TabNavbar = () => {
   const btnRef = useRef();
 
   const Navigate = useNavigate();
-
+  const dispatch = useDispatch();
   const handelSignout = () => {
     localStorage.removeItem("token");
+    dispatch(LogoutUser());
     Navigate("/login");
   };
 

@@ -38,6 +38,10 @@ import {
   import { GrContact } from "react-icons/gr";
   import { IoBagOutline } from "react-icons/io5";
 import { useDispatch, useSelector } from "react-redux";
+import { LogoutUser } from "../../../Redux/UserSlice";
+
+
+
   export const MobileNavbar = () => {
     const { isOpen, onOpen, onClose } = useDisclosure();
     const btnRef = useRef();
@@ -47,7 +51,7 @@ import { useDispatch, useSelector } from "react-redux";
     const Navigate = useNavigate();
     const [item,setItem]=useState("")
     const toast=useToast()
-
+    const dispatch = useDispatch();
       const HandleSearch=()=>{
         if(item===""){
           toast({
@@ -63,6 +67,7 @@ import { useDispatch, useSelector } from "react-redux";
       }
     const handelSignout = () => {
       localStorage.removeItem("token");
+      dispatch(LogoutUser());
       Navigate("/login");
     };
 

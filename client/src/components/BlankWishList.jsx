@@ -6,8 +6,6 @@ import { TiHeart } from "react-icons/ti";
 const BlankWishList = () => {
   const [CheckUserLogin,setCheckUserLogin]=useState(false);
 
-
-
   useEffect(()=>{
      const gettoken = localStorage.getItem('token');
      if(gettoken) {

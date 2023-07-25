@@ -97,24 +97,24 @@ const WomenHome = () => {
           </Box>
         </Flex>
        
-
+        <Link to={'/women-dresses'}>
         <Box mb={10}>
           <Image src={wedding}></Image>
         </Box>
+        </Link>
+        
 
-        <Box  width={["100%","100%","100%","80%"]} margin={'auto'}>
-          <Grid gridTemplateColumns={{
-            base: "repeat(1,1fr)",
-            md: "repeat(2,1fr)",
-            lg: "repeat(2,1fr)",
-          }}>
-              <GridItem >
-                <Link to={'/women-topshop'}>
-                  <Box ml={[0,0,0,20]}>
-                    <Box h={["500px","500px","500px","500px"]}>
-                      <Image h={"full"} src='https://content.asos-media.com/-/media/homepages/ww/2023/june/19-prime/ww-gbl/ww_global_topshop_moment_870x1110.jpg'></Image>
-                    </Box>
-                    <Flex direction={'column'} alignItems={'center'} w={['100%','100%','100%','75%']} mt={2} gap={2}>
+        <Box width={["100%","100%","100%","60%"]} margin={'auto'}>
+           <Flex justifyContent={'space-between'} gap={50} direction={{ base: 'column-reverse', md: 'row' }}>
+             <Box w={['100%','50%','50%','50%']}>
+                 <Link to={'/women-topshop'}>
+                 <Box>
+                  <Image h={"full"} w={'full'} src='https://content.asos-media.com/-/media/homepages/ww/2023/june/19-prime/ww-gbl/ww_global_topshop_moment_870x1110.jpg'>
+                  </Image>
+                 </Box>
+                 </Link>
+
+                 <Flex direction={'column'} alignItems={'center'} w={['100%','100%','100%','100%']} mt={2} gap={2}>
                     <Text fontSize={'2xl'}>TOPSHOP</Text>
                     <Text>Endless style</Text>
                     <Box border={'2px solid black'} p={1}>
@@ -123,16 +123,16 @@ const WomenHome = () => {
                     </Link>
                     </Box>
                     </Flex>
-                  </Box>
-                </Link>
-              </GridItem>
-              <GridItem >
-                <Link to={'/women-brands'}>
-                  <Box ml={[0,0,0,20]}>
-                    <Box h={["500px","500px","500px","500px"]}>
-                      <Image h={"full"} src='https://content.asos-media.com/-/media/homepages/ww/2023/june/19-prime/ww-gbl/ww_global_collusion_ballerina_sleaze_moment_870x1110.jpg'></Image>
-                    </Box>
-                    <Flex direction={'column'} alignItems={'center'} w={['100%','100%','100%','75%']} mt={2} gap={2}>
+             </Box>
+
+             <Box w={['100%','50%','50%','50%']}>
+                 <Link to={'/men-cloth'}>
+                 <Box>
+                  <Image h={"full"} w={'full'} src='https://content.asos-media.com/-/media/homepages/ww/2023/june/19-prime/ww-gbl/ww_global_collusion_ballerina_sleaze_moment_870x1110.jpg'>
+                  </Image>
+                 </Box>
+                 </Link>
+                 <Flex direction={'column'} alignItems={'center'} w={['100%','100%','100%','100%']} mt={2} gap={2}>
                     <Text fontSize={'2xl'}>COLLUSION</Text>
                     <Text>Go grunge</Text>
                     <Box border={'2px solid black'} p={1}>
@@ -141,12 +141,10 @@ const WomenHome = () => {
                     </Link>
                     </Box>
                     </Flex>
-                  </Box>
-                </Link>
-              </GridItem>
-          </Grid>
-        </Box>
-        
+             </Box>
+
+           </Flex>
+      </Box>
 
         <Box className='div' p={[1,1,1,10]} mt={10}>
               <Flex direction={'column'} w={['100%','100%','100%','50%']} margin={"auto"} alignItems={'center'} gap={2}>

@@ -135,11 +135,13 @@ const MenHome = () => {
      </Flex>
        
 
-      <Box mb={10}>
-        <Image src={wedding}></Image>
-      </Box>
+        <Link to={'/women-dresses'}>
+          <Box mb={10}  >
+            <Image src={wedding}></Image>
+          </Box>
+        </Link>
 
-      <Box  width={["90%","100%","100%","80%"]} margin={'auto'}>
+      {/* <Box  width={["90%","100%","100%","80%"]} margin={'auto'}>
         <Grid gridTemplateColumns={{
           base: "repeat(1,1fr)",
           md: "repeat(2,1fr)",
@@ -147,7 +149,6 @@ const MenHome = () => {
         }}>
             <GridItem >
               <Link to={'/men-cloth'}>
-              
                 <Box ml={[1,1,1,20]} cursor={'pointer'}>
                   <Box h={["500px","500px","500px","500px"]}>
                     <Image h={"full"} src='https://content.asos-media.com/-/media/homepages/mw/2023/july/10-gbl-excl-uk/mw-moments/mw_global_denim_washes_moment_870x1110.jpg'></Image>
@@ -184,8 +185,49 @@ const MenHome = () => {
               </Link>
             </GridItem>
         </Grid>
-      </Box>
+      </Box> */}
       
+      <Box width={["100%","100%","100%","60%"]} margin={'auto'}>
+           <Flex justifyContent={'space-between'} gap={50} direction={{ base: 'column-reverse', md: 'row' }}>
+             <Box w={['100%','50%','50%','50%']}>
+                 <Link to={'/men-cloth'}>
+                 <Box>
+                  <Image h={"full"} w={'full'} src='https://content.asos-media.com/-/media/homepages/mw/2023/july/10-gbl-excl-uk/mw-moments/mw_global_denim_washes_moment_870x1110.jpg'>
+                  </Image>
+                 </Box>
+                 </Link>
+
+                 <Flex direction={'column'} alignItems={'center'} w={['100%','100%','100%','100%']} mt={2} gap={2}>
+                  <Text fontSize={'2xl'}>DO IT IN DENIM</Text>
+                  <Text>Endless style</Text>
+                  <Box border={'2px solid black'} p={1}>
+                   <Link border={"1px solid red"} to={'/men-cloth'}>
+                        <Text>SHOP NOW</Text>
+                   </Link>
+                  </Box>
+                  </Flex>
+             </Box>
+
+             <Box w={['100%','50%','50%','50%']}>
+                 <Link to={'/men-cloth'}>
+                 <Box>
+                  <Image h={"full"} w={'full'} src='https://content.asos-media.com/-/media/homepages/ww/2023/july/17---gbl/mw_global_barbie_moment_870x1110_2.jpg'>
+                  </Image>
+                 </Box>
+                 </Link>
+                 <Flex direction={'column'} alignItems={'center'} w={['100%','100%','100%','100%']} mt={2} gap={2}>
+                  <Text fontSize={'2xl'}>BARBIE | ASOS</Text>
+                  <Text>Go grunge</Text>
+                  <Box border={'2px solid black'} p={1}>
+                   <Link border={"1px solid red"} to={'/men-cloth'}>
+                        <Text>SHOP NOW</Text>
+                   </Link>
+                  </Box>
+                  </Flex>
+             </Box>
+
+           </Flex>
+      </Box>
 
       <Box className='div' p={10} mt={10}>
             <Flex direction={'column'} w={['100%','100%','100%','50%']} margin={"auto"} alignItems={'center'} gap={2}>
