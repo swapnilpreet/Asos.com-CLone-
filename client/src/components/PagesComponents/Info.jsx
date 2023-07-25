@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { BiSolidDownArrow, BiSolidUpArrow } from "react-icons/bi";
 
 const Info = ({ data }) => {
-  // console.log("info", data);
   const [show, setshow] = useState(false);
   const handleToggle = () => setshow(!show);
   return (

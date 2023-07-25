@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Box, Button, Flex, SimpleGrid } from "@chakra-ui/react";
+import { Button,SimpleGrid } from "@chakra-ui/react";
 
 const ProductSubCategory = ({ data, setfilters, filters }) => {
   const handleCategory = (value) => {
